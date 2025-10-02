@@ -20,4 +20,5 @@ if ((score >= 0) && (score < 100)) {
     } else {
         grade = 'F'
     }
+}
     console.log(grade)
