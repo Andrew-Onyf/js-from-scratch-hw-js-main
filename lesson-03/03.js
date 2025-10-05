@@ -8,10 +8,10 @@
 function findLargest(number1, number2, number3) {
     // let biger = 0
 
-    if (number1 > number2) {
+    if (number1 > number2 > number3) {
         return number1;
         // biger = number1
-    } else if (number2 > number3) {
+    } else if (number1 < number2 > number3) {
         // biger = number2
         return number2;
     } else {
@@ -21,6 +21,7 @@ function findLargest(number1, number2, number3) {
 
     // return biger
 }
-let x = findLargest(1, 3, 5)
+
+let x = findLargest(1, -3, 5)
 console.log(`Наибольшее число ${x}`)
 
