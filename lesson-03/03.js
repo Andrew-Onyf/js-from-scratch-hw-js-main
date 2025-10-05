@@ -6,16 +6,20 @@
 
 
 function findLargest(number1, number2, number3) {
-    let biger = 0
+    // let biger = 0
 
     if (number1 > number2) {
-        biger = number1
+        return number1;
+        // biger = number1
     } else if (number2 > number3) {
-        biger = number2
+        // biger = number2
+        return number2;
     } else {
-        biger = number3
+        // biger = number3
+        return number3;
     }
-    return biger
+
+    // return biger
 }
 let x = findLargest(1, 3, 5)
 console.log(`Наибольшее число ${x}`)
