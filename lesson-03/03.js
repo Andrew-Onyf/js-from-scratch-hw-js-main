@@ -8,11 +8,11 @@ let biger = 0
 
 function findLargest(number1, number2, number3) {
     if (number1 > number2) {
-        biger += number1
+        biger = number1
     } else if (number2 > number3) {
-        biger += number2
+        biger = number2
     } else {
-        biger += number3
+        biger = number3
     }
     return biger
 }
