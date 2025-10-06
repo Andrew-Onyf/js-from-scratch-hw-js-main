@@ -1,21 +1,25 @@
 // Разработайте функцию findLargest, которая принимает три числа и возвращает наибольшее из них.
 
-const num1 = -2
-const num2 = -5
-const num3 = -11
+const num1 = 3
+const num2 = 1
+const num3 = 2
 
 
 function findLargest(number1, number2, number3) {
-    let biger = 0
-
-    if (number1 > number2 && number2 > number3) {
-        biger = biger + number1
-    } else if (number2 > number3 && number3 > number1) {
-        biger = biger + number2
-    } else {
-        biger = biger + number3
+    let biger = 0;
+    if (number1 >= number2) {
+        if (number1 >= number3) {
+            biger = number1;
+        } else {
+            biger = number3;
+        }
+    } else { // num2 > num1
+        if (number2 >= number3) {
+            biger = number2;
+        } else {
+            biger = number3;
+        }
     }
-
     return biger
 }
 
