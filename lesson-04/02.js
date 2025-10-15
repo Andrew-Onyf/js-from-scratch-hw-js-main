@@ -19,10 +19,10 @@ function findUniqueElements(arr) {
     const uniqueElements = [];
     for (let i = 0; i < arr.length; i++) {
         let arr = true
-
         for (let j = 0; j < uniqueElements.length; j++) {
             if (array[i] === array[j]) {
                 arr = false
+
             }
         }
         if (arr) {
@@ -34,6 +34,6 @@ function findUniqueElements(arr) {
     return uniqueElements;
 }
 
-const array = [1, 2, 3, 2, 1, 4]
+const array = [1, 2, 3, 2, 1, 4, 5]
 const unique = findUniqueElements(array)
 console.log(unique)
