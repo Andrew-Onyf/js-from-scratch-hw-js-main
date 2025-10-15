@@ -27,7 +27,7 @@ function includesElement(arr, searchElement) {
 }
 
 const array = [2, 4, 6]
-const element = 1;
+const element = 4;
 
 const findElement = includesElement(array, element);
 console.log(findElement);
