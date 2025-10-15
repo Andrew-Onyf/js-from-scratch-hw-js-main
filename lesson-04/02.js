@@ -34,6 +34,5 @@ function findUniqueElements(arr) {
     return uniqueElements;
 }
 
-const array = [1, 2, 3, 2, 1, 4, 5]
-const unique = findUniqueElements(array)
+const unique = findUniqueElements([1, 2, 3, 2, 1, 4, 5])
 console.log(unique)

@@ -30,7 +30,9 @@ function findCommonElements(arr1, arr2) {
         for (let j = 0; j < arr2.length; j++) {
             console.log('arr2 ' + arr2)
         }
-
+        if (arr1[i] === arr2[i]) {
+            common.push(arr1)
+        }
     }
     console.log(common)
 
