@@ -24,21 +24,21 @@ function findCommonElements(arr1, arr2) {
     const common = []
 
     for (let i = 0; i < arr1.length; i++) {
-        let elements = true
-        console.log('arr1   ' + arr1)
-
+        let arr = true
         for (let j = 0; j < arr2.length; j++) {
-            console.log('arr2 ' + arr2)
+            if (array[i] === array[j]) {
+                arr = false
+
+            }
         }
-        if (arr1[i] === arr2[i]) {
-            common.push(arr1)
+        if (arr) {
+            common.push(array[i])
         }
     }
-    console.log(common)
 
 
     return common
 }
 
 const generalArray = findCommonElements(array1, array2)
-// console.log(generalArray)
+console.log(generalArray)

@@ -18,15 +18,15 @@
 function findUniqueElements(arr) {
     const uniqueElements = [];
     for (let i = 0; i < arr.length; i++) {
-        let arr = true
+        let array = true
         for (let j = 0; j < uniqueElements.length; j++) {
-            if (array[i] === array[j]) {
-                arr = false
+            if (arr[i] === arr[j]) {
+                array = false
 
             }
         }
-        if (arr) {
-            uniqueElements.push(array[i])
+        if (array) {
+            uniqueElements.push(arr[i])
         }
     }
 
