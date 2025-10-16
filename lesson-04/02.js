@@ -19,14 +19,12 @@ function findUniqueElements(arr) {
     const uniqueElements = [];
     for (let i = 0; i < arr.length; i++) {
         let array = true
+
         for (let j = 0; j < uniqueElements.length; j++) {
-            if (arr[i] === uniqueElements[j]) {
-                array = false
+            if (arr[i] != uniqueElements[j]) {
+                uniqueElements.push(arr[i])
 
             }
-        }
-        if (array) {
-            uniqueElements.push(arr[i])
         }
     }
 
